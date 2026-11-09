@@ -20,13 +20,13 @@ WHERE monthly_income >= 15000;
 
 RESULT: Thabo (15000), Naledi(22000), Ayesha (35000)
 
-Query 2: Average Income
+# Query 2: Average Income
 
 SELECT AVG(monthly_income) AS avg_income FROM customers;
 
 RESULT: R18,400
 
-Query 3: Gauteng Customers
+# Query 3: Gauteng Customers
 
 SELECT name, province, monthly_income
 FROM customers
@@ -35,10 +35,10 @@ WHERE province = 'Gauteng';
 RESULT: THABO, NALEDI
 
 
-Insights
+# Insights
 1. Month-end = Spike: Account openings spike when people get paid.
 2. Friday = Spike: Airtime/ eWallet spike for the weekend.
 3. Trust = Key: People don't open an account until someone they know has one. Funeral cover and stokvel are often the first step into formal finance.
 
-Tools Used
+# Tools Used
 DB Browser for SQLite, SQL, GITHUB
